@@ -1,17 +1,14 @@
-﻿
-
-int Cube(int num)
+﻿void TableCube(int num)
 {
-    while (index < num)
-    num1 = num * num * num;
-    index++;
-    return num1;
+    int i = 1;
+    while (num >= i)
+    {
+        Console.Write($"{i * i * i} ");
+        i++;
+    }
+        
 }
 
-Console.WriteLine("Введите число");
-
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Cube(a);
-Console.WriteLine(b);
+TableCube(3);
 
 
