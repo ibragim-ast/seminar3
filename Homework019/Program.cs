@@ -10,8 +10,15 @@
     }
     return num2;
 }
-int result = Palindrome(45654);
-Console.WriteLine(result);
+
+Console.WriteLine("Проверьте число на палиндромность");
+int num = Convert.ToInt32(Console.ReadLine());
+Palindrome(num);
+if (num == Palindrome(num))
+    Console.WriteLine("Yes, baby");
+else
+    Console.WriteLine("No, man");
+
 
 
 
